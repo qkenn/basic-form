@@ -100,13 +100,13 @@ label {
 
 .input-field:active,
 .input-field:focus {
-  border: 2px solid hsl(0, 69%, 55%);
+  border: 2px solid var(--accent-color);
   outline: none;
 }
 
-/* .input-field:valid {
+.input-field:valid {
   border: 2px solid hsl(120, 100%, 52%);
-} */
+}
 
 .btn {
   background-color: var(--accent-color);

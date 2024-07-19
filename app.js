@@ -1,4 +1,6 @@
 const formEl = document.getElementById('signup-form');
+const passwordEl = document.getElementById('password');
+const confirmPsswrdEl = document.getElementById('c_password');
 
 formEl.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -11,4 +13,22 @@ formEl.addEventListener('submit', function (e) {
   for (const [key, value] of formData) {
     console.log(`${key} - ${value}`);
   }
+});
+
+passwordEl.addEventListener('keyup', function (e) {
+  if (confirmPsswrdEl.value != this.value) {
+    console.log('Passwords are not match');
+    return;
+  }
+
+  console.log('Matching');
+});
+
+confirmPsswrdEl.addEventListener('keyup', function (e) {
+  if (passwordEl.value != this.value) {
+    console.log('Passwords are not match');
+    return;
+  }
+
+  console.log('Matching');
 });
