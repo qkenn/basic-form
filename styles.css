@@ -16,18 +16,21 @@
 
 body {
   font-family: 'terminalGrotesque';
-  min-height: 100vh;
 }
 
 .main {
   display: flex;
   flex-wrap: nowrap;
+  min-height: 100vh;
 }
 
 .banner-section {
-  flex: 3;
+  flex: 6;
+  background: url('./assets/images/banner.jpg') no-repeat center / cover;
 }
 
 .form-section {
-  flex: 2;
+  flex: 5;
+  color: white;
+  background: #333;
 }
