@@ -108,6 +108,10 @@ label {
   border: 2px solid hsl(120, 100%, 52%);
 }
 
+.input-field::placeholder {
+  color: hsla(0, 0%, 11%, 0.24);
+}
+
 .btn {
   background-color: var(--accent-color);
   padding: 0.5em 1.5em;
