@@ -21,9 +21,9 @@ formEl.addEventListener('keyup', function () {
   pwdEl.value != cPwdEl.value ? (isMatch = false) : (isMatch = true);
 
   if (!isMatch) {
-    cPwdEl.style.border = '2px solid red';
+    cPwdEl.style.border = '2px solid hsl(0, 100%, 60%)';
   } else {
-    cPwdEl.style.border = '2px solid green';
+    cPwdEl.style.border = '2px solid hsl(120, 100%, 52%)';
   }
 
   isMatch ? (PwdErrMsg.textContent = '') : (PwdErrMsg.textContent = errMsg);
