@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --accent-color: hsl(34, 100%, 62%);
+}
+
 @font-face {
   font-family: 'caveStory';
   src: url('./assets/fonts/Cave-Story.ttf') format('truetype');
@@ -29,6 +33,7 @@ body {
 }
 
 label {
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -51,23 +56,29 @@ label {
 }
 
 .main-title {
+  color: var(--accent-color);
   font-size: 5rem;
   font-family: 'caveStory';
   letter-spacing: 0.1em;
-  line-height: 1;
+  line-height: 0.8;
 }
 
 .game-intro {
   font-size: 1.25rem;
-  margin: 0em 0;
+  margin-top: 2em;
   max-width: 40rem;
 }
 
 .form-cta {
-  font-size: 2rem;
+  font-size: 2.2rem;
   letter-spacing: 0.1em;
+  line-height: 0.8;
   font-family: 'caveStory';
-  margin: 1em 0;
+  margin: 1.5em 0 0.5em 0;
+}
+
+.cta-emoji {
+  font-size: 1.5rem;
 }
 
 .form-field {
@@ -78,8 +89,8 @@ label {
 }
 
 .input-field {
-  max-width: 25rem;
-  padding: 0.2em 0.5em;
+  max-width: 22rem;
+  padding: 0.15em 0.3em;
   border-radius: 0.3em;
   font-size: 1.5rem;
   font-family: inherit;
@@ -93,6 +104,24 @@ label {
   outline: none;
 }
 
-.input-field:valid {
+/* .input-field:valid {
   border: 2px solid hsl(120, 100%, 52%);
+} */
+
+.btn {
+  background-color: var(--accent-color);
+  padding: 0.5em 1.5em;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  margin-top: 3em;
+  font-weight: 700;
+  transition: background-color 0.2s ease-in-out;
+  letter-spacing: 0.1em;
+  border-radius: 0.3em;
+}
+
+.btn:hover {
+  background-color: hsl(34, 100%, 52%);
 }
