@@ -7,16 +7,25 @@
 @font-face {
   font-family: 'caveStory';
   src: url('./assets/fonts/Cave-Story.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'terminalGrotesque';
   src: url('./assets/fonts/terminal-grotesque.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   font-family: 'terminalGrotesque';
   line-height: 1.6;
+}
+
+::selection {
+  background-color: hsl(34, 100%, 56%);
+  color: hsl(0, 0%, 0%);
 }
 
 label {
@@ -38,14 +47,14 @@ label {
   flex: 4;
   color: hsl(0, 0%, 100%);
   background: hsl(0, 0%, 8%);
-  padding: 5rem;
+  padding: 4rem 5rem;
 }
 
 .main-title {
   font-size: 5rem;
   font-family: 'caveStory';
   letter-spacing: 0.1em;
-  line-height: 1.25;
+  line-height: 1;
 }
 
 .game-intro {
@@ -64,9 +73,26 @@ label {
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  gap: 0.1em;
+  margin-top: 1.5rem;
 }
 
 .input-field {
-  max-width: 30rem;
+  max-width: 25rem;
+  padding: 0.2em 0.5em;
+  border-radius: 0.3em;
+  font-size: 1.5rem;
+  font-family: inherit;
+  outline: none;
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.input-field:active,
+.input-field:focus {
+  border: 2px solid hsl(0, 69%, 55%);
+  outline: none;
+}
+
+.input-field:valid {
+  border: 2px solid hsl(120, 100%, 52%);
 }
