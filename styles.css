@@ -16,4 +16,18 @@
 
 body {
   font-family: 'terminalGrotesque';
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.banner-section {
+  flex: 3;
+}
+
+.form-section {
+  flex: 2;
 }

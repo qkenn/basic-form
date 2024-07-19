@@ -7,14 +7,42 @@
     <title>Basic Form</title>
   </head>
   <body>
-    <main>
-      <h1>Pixelmania</h1>
-      <p>
-        Welcome to Pixelmania, a medieval adventure like no other! In a world of
-        wonder and magic, the land is threatened by the dark sorcery of the
-        wicked Witch Xylara. This powerful foe has cast a spell of darkness over
-        the realm, and only a brave hero can defeat her and shatter the curse.
-      </p>
+    <main class="main">
+      <section class="banner-section"></section>
+
+      <section class="form-section">
+        <h1>Pixelmania</h1>
+        <p>
+          Welcome to Pixelmania, a medieval adventure like no other! In a world
+          of wonder and magic, the land is threatened by the dark sorcery of the
+          wicked Witch Xylara. This powerful foe has cast a spell of darkness
+          over the realm, and only a brave hero can defeat her and shatter the
+          curse.
+        </p>
+
+        <h3>Take the challenge</h3>
+
+        <div class="signup-form-container">
+          <form action="#" method="get" id="signup-form">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" />
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+
+            <label for="c_password">Confirm Password</label>
+            <input type="password" name="c_password" id="c_password" />
+
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
