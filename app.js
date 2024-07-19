@@ -1,8 +1,8 @@
-const formEl = document.getElementById('signup-form');
-const pwdEl = document.getElementById('password');
-const cPwdEl = document.getElementById('c_password');
-const PwdErrMsg = document.getElementById('pwd-err-msg');
-const errMsg = 'Passwords do not match';
+const formEl = document.getElementById('signup-form'),
+  pwdEl = document.getElementById('password'),
+  cPwdEl = document.getElementById('c_password'),
+  PwdErrMsg = document.getElementById('pwd-err-msg'),
+  errMsg = 'Passwords do not match';
 
 let isMatch = false;
 
