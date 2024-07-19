@@ -11,8 +11,8 @@
       <section class="banner-section"></section>
 
       <section class="form-section">
-        <h1>Pixelmania</h1>
-        <p>
+        <h1 class="main-title">Pixelmania</h1>
+        <p class="game-intro">
           Welcome to Pixelmania, a medieval adventure like no other! In a world
           of wonder and magic, the land is threatened by the dark sorcery of the
           wicked Witch Xylara. This powerful foe has cast a spell of darkness
@@ -20,24 +20,54 @@
           curse.
         </p>
 
-        <h3>Take the challenge</h3>
+        <h3 class="form-cta">Take the challenge</h3>
 
         <div class="signup-form-container">
           <form action="#" method="get" id="signup-form">
-            <label for="first_name">First Name:</label>
-            <input type="text" name="first_name" id="first_name" />
+            <div class="form-field">
+              <label for="first_name">First Name</label>
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                class="input-field"
+              />
+            </div>
 
-            <label for="last_name">Last Name:</label>
-            <input type="text" name="last_name" id="last_name" />
+            <div class="form-field">
+              <label for="last_name">Last Name</label>
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                class="input-field"
+              />
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" />
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="input-field" />
+            </div>
 
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <div class="form-field">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input-field"
+              />
+            </div>
 
-            <label for="c_password">Confirm Password</label>
-            <input type="password" name="c_password" id="c_password" />
+            <div class="form-field">
+              <label for="c_password">Confirm Password</label>
+              <input
+                type="password"
+                name="c_password"
+                id="c_password"
+                class="input-field"
+              />
+            </div>
 
             <button type="submit">Sign Up</button>
           </form>

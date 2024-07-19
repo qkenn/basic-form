@@ -16,6 +16,11 @@
 
 body {
   font-family: 'terminalGrotesque';
+  line-height: 1.6;
+}
+
+label {
+  text-transform: uppercase;
 }
 
 .main {
@@ -25,12 +30,43 @@ body {
 }
 
 .banner-section {
-  flex: 6;
+  flex: 7;
   background: url('./assets/images/banner.jpg') no-repeat center / cover;
 }
 
 .form-section {
-  flex: 5;
-  color: white;
-  background: #333;
+  flex: 4;
+  color: hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 8%);
+  padding: 5rem;
+}
+
+.main-title {
+  font-size: 5rem;
+  font-family: 'caveStory';
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+}
+
+.game-intro {
+  font-size: 1.25rem;
+  margin: 0em 0;
+  max-width: 40rem;
+}
+
+.form-cta {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  font-family: 'caveStory';
+  margin: 1em 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.input-field {
+  max-width: 30rem;
 }
