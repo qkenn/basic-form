@@ -1,34 +1,30 @@
 const formEl = document.getElementById('signup-form');
-const passwordEl = document.getElementById('password');
-const confirmPsswrdEl = document.getElementById('c_password');
+const pwdEl = document.getElementById('password');
+const cPwdEl = document.getElementById('c_password');
+const PwdErrMsg = document.getElementById('pwd-err-msg');
+const errMsg = 'Passwords do not match';
+
+let isMatch = false;
 
 formEl.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const formData = new FormData(this);
-
-  if (formData.get('password') !== formData.get('c_password')) {
-    console.log('Passwords do not match');
-  }
-  for (const [key, value] of formData) {
-    console.log(`${key} - ${value}`);
-  }
-});
-
-passwordEl.addEventListener('keyup', function (e) {
-  if (confirmPsswrdEl.value != this.value) {
-    console.log('Passwords are not match');
+  if (!isMatch) {
+    window.alert('Passwords does not match');
     return;
   }
 
-  console.log('Matching');
+  window.alert('Welcome to Castle Crusade');
 });
 
-confirmPsswrdEl.addEventListener('keyup', function (e) {
-  if (passwordEl.value != this.value) {
-    console.log('Passwords are not match');
-    return;
+formEl.addEventListener('keyup', function () {
+  pwdEl.value != cPwdEl.value ? (isMatch = false) : (isMatch = true);
+
+  if (!isMatch) {
+    cPwdEl.style.border = '2px solid red';
+  } else {
+    cPwdEl.style.border = '2px solid green';
   }
 
-  console.log('Matching');
+  isMatch ? (PwdErrMsg.textContent = '') : (PwdErrMsg.textContent = errMsg);
 });
