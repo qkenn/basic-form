@@ -17,7 +17,9 @@ formEl.addEventListener('submit', function (e) {
   window.alert('Welcome to Castle Crusade');
 });
 
-pwdEl.addEventListener('keyup', function () {
+formEl.addEventListener('keyup', function () {
+  if (!pwdEl.value && !cPwdEl.value) return;
+
   pwdEl.value != cPwdEl.value ? (isMatch = false) : (isMatch = true);
 
   if (!isMatch) {
