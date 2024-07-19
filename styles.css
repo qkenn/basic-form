@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'caveStory';
+  src: url('./assets/fonts/Cave-Story.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'terminalGrotesque';
+  src: url('./assets/fonts/terminal-grotesque.ttf') format('truetype');
+}
+
+body {
+  font-family: 'terminalGrotesque';
+}
